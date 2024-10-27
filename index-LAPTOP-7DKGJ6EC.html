@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Beauty</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif ;
+            background-color: #e0f7fa;
+            color: #2e7d32;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.s ease;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        img {
+            width: 50%;
+            height: 300px;
+            border-radius: 10px;
+
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #2e7d32;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #f4f3ed;
+            color: rgb(255, 123, 47);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Nature's Beauty</h1>
+        <p>Nature is a beautiful and essential part of our world.From towering mountains to serene lakes, it offers endless inspiration and tranquility.</p>
+        <hr>
+        <h2>Stunning Landscapes</h2>
+        <img src = "mt.jpg" alt="Mountain View">
+        <p>Mountains offer breathtaking views and are perfect for hiking and exploration.</p>
+
+        <h2>Vibrant Wildlife</h2>
+        <img src="wa.jpg" alt="Wildlife">
+        <p>Wildlife is an integral part of nature, showcasing the diversity of life on Earth.</p>
+
+        <h2>Insects</h2>
+        <img src="gr.jpg" alt="Insects">
+        <p>Insects are very important for nature and they clean our environment.</p>
+        <p id="demo"> <a href="https://en.wikipedia.org/wiki/Nature"><button>About Nature</button></a></p>
+
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+           
+        
+        <footer> <p>&copy; 2024 Nature's Beauty</P>
+        </footer>
+    </div>
+
+    <script>
+        function changeBackgroundColor() {
+            const colors = ['lightcyan','lightyellow','lightorange','lightpurple','lightpink'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+            }
+
+    </script>
+</bo
